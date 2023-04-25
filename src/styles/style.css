@@ -1,0 +1,38 @@
+@media (max-width: 575px) {
+    .gallery-container{
+        column-count: 1;
+    }
+}
+
+@media (min-width: 576px) {
+    .gallery-container {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 768px) {
+    .gallery-container {
+        column-count: 4;
+    }
+}
+
+@media (min-width: 992px) {
+    .gallery-container {
+        column-count: 5;
+    }
+}
+
+
+.gallery-container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.gallery-tile {
+    display: inline-block;
+    width: 100%;
+}
+
+.gallery-tile img {
+    width: 100% !important;
+}
