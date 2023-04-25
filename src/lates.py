@@ -19,7 +19,10 @@ output_dir = os.path.join(base_dir, 'docs')
 
 
 def copy_content(input_content_dir, output_content_dir, replace=True):
-    input_content = os.listdir(input_content_dir)
+    if os.path.exists(input_content_dir):
+        input_content = os.listdir(input_content_dir)
+    else:
+        input_content = []
     if not os.path.exists(output_content_dir):
         os.mkdir(output_content_dir)
     output_content = os.listdir(output_content_dir)
