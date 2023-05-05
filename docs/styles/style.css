@@ -6,19 +6,19 @@
 
 @media (min-width: 576px) {
     .gallery-container {
-        column-count: 3;
+        column-count: 2;
     }
 }
 
 @media (min-width: 768px) {
     .gallery-container {
-        column-count: 4;
+        column-count: 3;
     }
 }
 
 @media (min-width: 992px) {
     .gallery-container {
-        column-count: 5;
+        column-count: 4;
     }
 }
 
