@@ -29,6 +29,9 @@ def copy_content(input_content_dir, output_content_dir, replace=True):
     for item in input_content:
         if item not in output_content or replace:
             shutil.copy(os.path.join(input_content_dir, item), os.path.join(output_content_dir, item))
+    for item in output_content:
+        if item not in input_content:
+            os.remove(os.path.join(output_content_dir, item))
 
 
 def get_images():
