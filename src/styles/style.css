@@ -16,12 +16,6 @@
     }
 }
 
-@media (min-width: 992px) {
-    .gallery-container {
-        column-count: 4;
-    }
-}
-
 
 .gallery-container {
     max-width: 100%;
